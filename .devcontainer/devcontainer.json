@@ -1,0 +1,14 @@
+{
+	"name": "Telegram Admin Caller Bot",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"postAttachCommand": "echo \"Updating packages:\" && uv sync && echo \"Finished updating packages!\"",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python"
+			]
+		}
+	}
+}
